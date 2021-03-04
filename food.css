@@ -1,0 +1,85 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    background-color: skyblue;
+}
+.food-des{
+    background-color: white;
+    width: 23%;
+    height: 250px;
+    padding: 5px;
+}
+.row{
+    display: flex;
+    padding: 10px;
+}
+.img1{
+    background-image: url("../js/images/spagetti.jpg");
+    height: 150px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.img1:hover{
+    opacity: 1;
+}
+.img2:hover{
+    opacity: 1;
+}
+.img3:hover{
+    opacity: 1;
+}
+.img4:hover{
+    opacity: 1;
+}
+.img5:hover{
+    opacity: 1;
+}
+.img2{
+    background-image: url("../js/images/beaf.jpg");
+    height: 150px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.img3{
+    background-image: url("../js/images/shawarma.jpg");
+    height: 150px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.img4{
+    background-image: url("../js/images/snacks.jpg");
+    height: 150px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.img5{
+    background-image: url("../js/images/noodle.jpg");
+    height: 150px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.food-des-tiitle{
+    padding-top: 5px;
+}
+@media(max-width:600px){
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+    .food-des{
+        width: 100%;
+    }
+}
+.food-des-img{
+    height: 150px;
+    opacity: 0.8;
+    cursor: pointer;
+}

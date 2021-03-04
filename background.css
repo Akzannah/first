@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../js/images/guy.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+}
+.nav-links a:hover{
+    border: 1px solid white
+}
+.nav-links{
+    padding-top: 15px;
+}
+.nav-links a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    padding: 14px 16px;
+}
+.active {
+    border: 1px solid white;
+} 
+h1{
+    color: #fff;
+    font-size: 100px;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+}
+.main-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+.btn{
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    justify-content: space-between;
+}
+.btn button{
+    padding: 12px 13px;
+}
+.btn1{
+    background-color: orange;
+    border: 1px solid white;
+    color: #fff;
+}
+.btn2{
+    background-color: transparent;
+    border: 1px solid white;
+    color: #fff;
+}
+.btn2:hover{
+    background-color: orange;
+}
+/* responsiveness */
+@media(max-width:600px),(max-width:600px){
+    /* .container{
+        display: flex;
+        flex-direction: column;
+    } */
+    .navigation{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .nav-links a{
+        line-height: 1.1;
+        float: left;
+        font-size: 25px;
+    }
+    .main-content{
+        padding-top: 65px;
+    }
+    .active{
+        border: 0;
+    }
+    h1{
+        font-size: 35px;
+        padding-top: 6px;
+    }
+    .btn{
+        display: flex;
+        flex-direction: column;
+    }
+    .btn1{
+      margin-bottom: 10px;  
+    }
+}
